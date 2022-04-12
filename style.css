@@ -80,11 +80,15 @@ main {
   .projects {
     display: flex;
     flex-direction: row;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
   .project {
     width: 300px;
+    margin: 0.5rem;
+  }
+  .project-cover {
+    width: inherit;
+    margin: 0;
   }
 }
