@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 100%;
+  margin: 0;
 }
 
 .header {
@@ -37,6 +38,22 @@ main {
   flex-direction: column;
   justify-content: center;
 }
+.subclass {
+  border-top: 1px solid rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subprojects {
+  display: flex;
+  flex-direction: column;
+}
+.subtitle {
+  color: #444;
+  background-color: #f3f3f3;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+}
 .project {
   display: flex;
   flex-direction: column;
@@ -53,36 +70,61 @@ main {
   margin: 0 auto;
 }
 .gallery {
-  margin: 10px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+  justify-content: center;
   object-fit: cover;
   object-position: 100% 0;
 }
 .gallery img {
   transition: 1s;
-  padding: 15px;
-  width: 22%;
+  padding: 5px;
+  width: 100px;
 }
 .gallery img:hover {
   filter: grayscale(100%);
   transform: scale(1.1);
 }
+footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  /* height: 100px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.address,
+.tel {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.8rem;
+  margin: 0 auto;
+}
 
 @media screen and (min-width: 800px) {
   .logo {
     margin: 5rem 0;
-    width: 300px;
+    width: 90%;
+  }
+  .header {
+    width: 440px;
+    margin: 0 auto;
   }
   .title {
     font-size: 1.5rem;
     padding: 0 1.5rem 0.5rem;
     width: 120px;
   }
-  .projects {
+
+  .subprojects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .project {
     width: 300px;
     margin: 0.5rem;
