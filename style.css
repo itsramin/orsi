@@ -43,6 +43,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem 0 1.5rem;
 }
 .subprojects {
   display: flex;
@@ -52,7 +53,7 @@ main {
   color: #444;
   background-color: #f3f3f3;
   padding: 0.5rem 2rem;
-  margin: 1rem;
+  margin: 0.5rem 2rem 2rem;
 }
 .project {
   display: flex;
@@ -96,11 +97,17 @@ footer {
   flex-direction: column;
 }
 .address,
-.tel {
+.tel,
+.insta {
   font-size: 0.9rem;
   color: #777;
-  line-height: 1.8rem;
+  line-height: 2rem;
   margin: 0 auto;
+}
+.insta-icon {
+  margin-top: 0.6rem;
+  height: 25px;
+  filter: grayscale(100%);
 }
 
 @media screen and (min-width: 800px) {
